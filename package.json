@@ -1,0 +1,21 @@
+{
+  "name": "@zwodder/win-certs",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "author": "tomasgajdos@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --build && node-gyp rebuild",
+    "clean": "node-gyp clean"
+  },
+  "devDependencies": {
+    "@types/node": "^11.9.4",
+    "node-gyp": "^3.8.0",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "bindings": "^1.4.0",
+    "node-addon-api": "^1.6.2"
+  },
+  "gypfile": true
+}
