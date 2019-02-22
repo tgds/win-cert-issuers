@@ -1,6 +1,6 @@
 {
   "name": "@zwodder/win-certs",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "lib/index.js",
   "author": "tomasgajdos@gmail.com",
   "license": "MIT",
@@ -14,7 +14,6 @@
     "typescript": "^3.3.3"
   },
   "dependencies": {
-    "bindings": "^1.4.0",
     "node-addon-api": "^1.6.2"
   },
   "gypfile": true

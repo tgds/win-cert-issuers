@@ -1,6 +1,9 @@
-var { WinCerts } = require('bindings')('win-certs');
+const { WinCerts } = process.platform === 'win32' && require('../build/Release/win-certs.node');
 
 export const getIssuerList = () => {
+    if (process.platform !== 'win32') {
+        return []
+    }
     const i = new WinCerts()
     const items: string[] = []
     let result = i.next()
